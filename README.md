@@ -30,3 +30,9 @@ portfolio-website/
 │   └── main.js
 └── README.md           # Project documentation
 ```
+
+More Updates Coming soon!
+
+- JavaScript functionality
+- Better UI
+- Smoother animations
