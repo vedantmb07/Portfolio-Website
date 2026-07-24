@@ -5,6 +5,7 @@ This repository contains a one-page portfolio website built with HTML, CSS, and 
 ## Overview
 
 The website includes:
+
 - A hero section with animated title text and a profile image.
 - A skills section highlighting tools, languages, and development strengths.
 - A projects section showcasing featured web and desktop applications.
@@ -39,6 +40,7 @@ Portfolio Website/
 ## Getting Started
 
 To view the website locally:
+
 1. Open `index.html` in a web browser.
 2. Alternatively, host the folder using any static file server or deployment service.
 
