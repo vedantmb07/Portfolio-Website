@@ -17,12 +17,6 @@ A lightweight one-page portfolio built with HTML, CSS, and JavaScript. It combin
 - Responsive layout for mobile and desktop.
 - Clickable hero image to open the GitHub profile.
 
-## Customize
-
-- Update `index.html` to change project details, section labels, or contact links.
-- Edit `style.css` to adjust colors, spacing, or glass effects.
-- Modify `script.js` to tweak scroll behavior, active section logic, or animation timing.
-
 ## Project Structure
 
 ```text
