@@ -17,12 +17,6 @@ A lightweight one-page portfolio built with HTML, CSS, and JavaScript. It combin
 - Responsive layout for mobile and desktop.
 - Clickable hero image to open the GitHub profile.
 
-## Customize
-
-- Update `index.html` to change project details, section labels, or contact links.
-- Edit `style.css` to adjust colors, spacing, or glass effects.
-- Modify `script.js` to tweak scroll behavior, active section logic, or animation timing.
-
 ## Project Structure
 
 ```text
@@ -35,3 +29,44 @@ Portfolio Website/
 ```
 
 This site is designed as a clean, reusable portfolio base and can be extended with additional sections or visual refinements.
+
+# 🌐 Personal Portfolio Website
+
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
+A modern, responsive personal portfolio website designed to showcase my projects, technical skills, background, and contact details.
+
+📌 **Live Demo:** [vedantmb07.github.io/Portfolio-Website](https://vedantmb07.github.io/Portfolio-Website/) *(Update with your actual deployment link)*
+
+---
+
+## ✨ Features
+
+- **Responsive Design:** Optimized for mobile, tablet, and desktop viewports.
+- **Project Showcase:** Highlights major personal and open-source projects with live demos and source code links.
+- **Skills & Stack Overview:** Clean presentation of technical competencies and toolsets.
+- **Interactive UI:** Smooth scrolling, intuitive navigation, and interactive animations.
+- **Contact Form:** Direct contact integration for inquiries and collaborations.
+
+---
+
+## 🛠️ Built With
+
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+- **Frameworks / Libraries:** *(e.g., React, Next.js, Tailwind CSS, Bootstrap, or Framer Motion)*
+- **Icons & Fonts:** FontAwesome / Lucide Icons, Google Fonts
+- **Deployment:** GitHub Pages / Vercel / Netlify
+
+---
+
+## 📁 Repository Structure
+
+```text
+Portfolio-Website/
+├── assets/          # Images, icons, and static media
+├── css/             # Stylesheets (or styles/)
+├── js/              # JavaScript scripts
+├── index.html       # Main HTML page
+└── README.md        # Project documentation
