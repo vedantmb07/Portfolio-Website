@@ -68,6 +68,13 @@ a.button {
     color: rgba(255, 255, 255, 0.72);
 }
 
+.topbar-note {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.74);
+    text-transform: none;
+    white-space: nowrap;
+}
+
 .nav-actions {
     display: flex;
     flex-wrap: wrap;
@@ -186,15 +193,25 @@ a.button {
     justify-content: flex-end;
 }
 
-.hero-image-glass {
+.hero-image-frame {
+    position: relative;
     width: 100%;
     max-width: 520px;
-    padding: 18px;
-    border-radius: 34px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.35);
-    backdrop-filter: blur(22px);
+}
+
+.hero-name-behind {
+    position: absolute;
+    top: 16%;
+    left: -18px;
+    z-index: 1;
+    font-size: clamp(4rem, 8vw, 7rem);
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: -0.05em;
+    color: rgba(255, 255, 255, 0.08);
+    transform: rotate(-7deg);
+    pointer-events: none;
+    text-transform: uppercase;
 }
 
 .hero-logo {
@@ -202,19 +219,24 @@ a.button {
     border-radius: 28px;
     object-fit: cover;
     display: block;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 35px 90px rgba(0, 0, 0, 0.45);
 }
 
 .section-header {
     display: flex;
     align-items: flex-end;
-    gap: 18px;
-    margin-bottom: 40px;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.section-header h2 {
+    margin: 0;
 }
 
 .section-number {
-    font-size: 18px;
-    color: #ff8c7e;
-    font-weight: 700;
+    display: none;
 }
 
 .section h2 {
@@ -242,8 +264,17 @@ a.button {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: center;
     gap: 24px;
+}
+
+.skills-description {
+    max-width: 760px;
+    margin: 0 auto 28px;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.85;
+    font-size: 1rem;
 }
 
 .skill-card h3 {
@@ -278,13 +309,47 @@ a.button {
     font-size: 0.95rem;
 }
 
+.skill-icons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.skill-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    width: 100%;
+}
+
+.skill-icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.skill-icon span {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
 .projects-grid {
     display: grid;
-    gap: 24px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
 }
 
 .project-card {
     position: relative;
+    padding: 24px;
+    border-radius: 24px;
 }
 
 .project-badge {
@@ -330,6 +395,61 @@ a.button {
 
 .contact-card a {
     text-decoration: none;
+}
+
+.section-slider {
+    position: fixed;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    width: 180px;
+    padding: 18px;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(22px);
+    z-index: 30;
+}
+
+.slider-label {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 16px;
+}
+
+.slider-items {
+    display: grid;
+    gap: 12px;
+}
+
+.slider-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 13px;
+    text-align: left;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.slider-item:hover,
+.slider-item.active {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.22);
+    color: #fff;
+    transform: translateX(-2px);
+}
+
+.slider-icon {
+    font-size: 1.05rem;
 }
 
 .reveal {
