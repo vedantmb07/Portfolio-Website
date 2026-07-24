@@ -384,6 +384,71 @@ a.button {
 
 .contact-card ul {
     margin-top: 20px;
+    display: grid;
+    gap: 14px;
+}
+
+.contact-card ul li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    min-width: 34px;
+    height: 34px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+.contact-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.section-header {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.section-header h2 {
+    margin: 0;
+    position: relative;
+    transition: color 0.35s ease, text-shadow 0.35s ease;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: rgba(255, 140, 126, 0.9);
+    transition: width 0.35s ease;
+}
+
+.section-header h2.active-title {
+    color: #fff;
+    text-shadow: 0 0 24px rgba(255, 255, 255, 0.16), 0 0 40px rgba(255, 140, 126, 0.18);
+}
+
+.section-header h2.active-title::after {
+    width: 72px;
+}
+
+.section-card-title {
+    display: inline-block;
 }
 
 .contact-actions {
