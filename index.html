@@ -8,33 +8,186 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Kavoon&family=Playwrite+AU+QLD:wght@100..400&family=Chicle&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Kavoon&family=Playwrite+AU+QLD:wght@100..400&family=Chicle&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <title>Vedant's Portfolio</title>
 </head>
 
 <body>
-    <nav>
-        <img class="myLogo" src="images/pfp.jpg" alt="Developer Logo">
-        <div class="myTitle">Vedant's Portfolio</div>
-        <ul>
-            <li><a class="nav-link" href="#home">Home</a></li>
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#projects">Projects</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section class="hero">
-            <div class="hero-title">PORTFOLIO</div>
-            <div><img class="hero-logo" src="images/pfp.jpg" alt="Developer Logo"></div>
-            <div class="hero-desc">Hi, I am Vedant, I thrive on trying to solve complex layout puzzles, optimizing web
-                accessibility, and continuously expanding my technical toolkit. Currently, I am focused on building
-                seamless user experiences while looking for opportunities to contribute to dynamic engineering teams.
+    <nav class="topbar">
+        <div class="brand">
+            <img class="myLogo" src="images/pfp.jpg" alt="Vedant profile photo">
+            <div>
+                <p class="brand-label">Vedant's Portfolio</p>
+                <span class="brand-subtitle">Full Stack Developer</span>
             </div>
-            <h2>Full Stack Web Developer</h2>
+        </div>
+        <div class="nav-actions">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#projects">Projects</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero section">
+            <div class="hero-panel">
+                <div class="hero-copy">
+                    <p class="eyebrow">Full Stack Developer</p>
+                    <h1>Hi, I’m Vedant.</h1>
+                    <p class="hero-text">I thrive on solving complex layout puzzles, optimizing web accessibility,
+                        and continuously expanding my technical toolkit. I build seamless user experiences and
+                        enjoy contributing to dynamic engineering teams.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="button button-primary">View Projects</a>
+                        <a href="#contact" class="button button-secondary">Let’s Connect</a>
+                    </div>
+                    <div class="hero-notes glass-card">
+                        <p>Currently learning: <strong>Data Structures & Algorithms</strong> with Java and
+                            <strong>MongoDB</strong> for NoSQL.</p>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <div class="hero-image-frame">
+                        <div class="hero-name-behind">Hi, I’m Vedant.</div>
+                        <img class="hero-logo" src="images/pfp.jpg" alt="Vedant profile photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section reveal">
+            <div class="section-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="glass-card about-card">
+                <p>Hi, I am <strong>Vedant</strong>. I thrive on solving various puzzles, optimizing web accessibility,
+                    and continuously expanding my technical toolkit. Currently, I am focused on building seamless user
+                    experiences while looking for opportunities to contribute to dynamic engineering teams.</p>
+                <p>My projects range from a polished personal portfolio UI to practical productivity tools like a fully
+                    interactive To-Do List app built with HTML, CSS, and JavaScript, and a Java-based Currency Converter
+                    with a clean desktop interface.</p>
+                <p>In the Portfolio Website project, I focused on modern glassmorphism, smooth transitions, and responsive
+                    navigation. The To-Do List app demonstrates user input handling, persistence-ready list management,
+                    and elegant task controls. The Currency Converter project shows my ability to build desktop workflows
+                    with intuitive design and accurate real-time conversion logic.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section reveal">
+            <div class="section-header">
+                <h2>Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="glass-card skill-card">
+                    <h3>Core Skills</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
+                <div class="glass-card skill-card">
+                    <h3>Tools & Ecosystem</h3>
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+                <div class="glass-card skill-card">
+                    <h3>Learning</h3>
+                    <ul>
+                        <li>Data Structures & Algorithms</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section reveal">
+            <div class="section-header">
+                <h2>Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="glass-card project-card">
+                    <div class="project-badge">Featured</div>
+                    <h3>Portfolio Website</h3>
+                    <p>A modern portfolio experience built with glassmorphism, animated transitions, and smooth section
+                        navigation.</p>
+                    <div class="project-meta">
+                        <span>HTML / CSS / JavaScript</span>
+                        <a href="https://github.com/vedantmb07/Portfolio-Website" target="_blank" rel="noreferrer">View
+                            on GitHub</a>
+                    </div>
+                </article>
+                <article class="glass-card project-card">
+                    <div class="project-badge">Web App</div>
+                    <h3>To-Do List App</h3>
+                    <p>A clean task manager built with HTML, CSS, and JavaScript for adding, editing, and removing todo
+                        items with polished interaction states.</p>
+                    <div class="project-meta">
+                        <span>HTML / CSS / JavaScript</span>
+                        <a href="https://github.com/vedantmb07/To-Do-List-App" target="_blank" rel="noreferrer">View
+                            on GitHub</a>
+                    </div>
+                </article>
+                <article class="glass-card project-card">
+                    <div class="project-badge">Desktop App</div>
+                    <h3>Currency Converter</h3>
+                    <p>A responsive Java desktop app for real-time currency conversions with a friendly GUI and practical
+                        workflow.</p>
+                    <div class="project-meta">
+                        <span>Java</span>
+                        <a href="https://github.com/vedantmb07/Currency-Converter" target="_blank" rel="noreferrer">View
+                            on GitHub</a>
+                    </div>
+                </article>
+                <article class="glass-card project-card">
+                    <div class="project-badge">Study</div>
+                    <h3>JDBC Student ResultSet</h3>
+                    <p>A Java case study showing database connection management, query execution, and display of student
+                        records via JDBC ResultSet.</p>
+                    <div class="project-meta">
+                        <span>Java / JDBC</span>
+                        <a href="https://github.com/vedantmb07/JDBC-Project---Student-ResultSet" target="_blank" rel="noreferrer">View
+                            on GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section reveal">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2>Contact</h2>
+            </div>
+            <div class="glass-card contact-card">
+                <p>I'm open to new opportunities, freelance work, and meaningful collaboration. If you have a project or
+                    idea,
+                    let’s discuss it.</p>
+                <ul>
+                    <li><strong>Location:</strong> Mumbai, India</li>
+                    <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vedant-bhangale07" target="_blank"
+                            rel="noreferrer">in/vedant-bhangale07</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/vedantmb07" target="_blank"
+                            rel="noreferrer">github.com/vedantmb07</a></li>
+                </ul>
+                <div class="contact-actions">
+                    <a href="https://github.com/vedantmb07" class="button button-primary" target="_blank"
+                        rel="noreferrer">Visit GitHub</a>
+                    <a href="https://linkedin.com/in/vedant-bhangale07" class="button button-secondary" target="_blank"
+                        rel="noreferrer">Message on LinkedIn</a>
+                </div>
+            </div>
         </section>
     </main>
+
     <script src="script.js"></script>
 </body>
 
